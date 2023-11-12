@@ -1,5 +1,38 @@
 # credit-risk-classification
 
+# Module 12 Report Template
+
+## Overview of the Analysis
+
+The purpose of this analysis was to predict credit risk for loans using machine learning models. The financial data provided details on loans like loan size, interest rate, income, debt level, etc. The goal was to predict if a loan was high risk (1) or healthy (0).
+
+I went through the machine learning process of splitting data, fitting and evaluating models, and tuning models. I used LogisticRegression on the original imbalanced data and then resampled with RandomOverSampler to handle class imbalance.
+
+## Results
+
+Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
+
+* Machine Learning Model 1:
+  * Balanced Accuracy Score: 0.94
+  * Precision: 0.99 for 0 class, 0.87 for 1 class
+  * Recall: 1.00 for 0 class, 0.89 for 1 class
+
+* Machine Learning Model 2:
+  * Balanced Accuracy Score: 0.99
+  * Precision: 0.99 for both 0 and 1 classes
+  * Recall: 0.99 for both 0 and 1 classes.
+
+## Summary
+
+The oversampled LogisticRegression model performed best, with significantly improved scores over the original model.
+
+On the imbalanced data, the model strongly favored the majority 0 class, as evidenced by the high 1.0 precision but only 0.89 recall on the 1 class.
+
+Oversampling created equal samples of each class, which enabled the model to improve precision and recall to 0.99 for both classes.
+
+I recommend the oversampled LogisticRegression model because it does an excellent job predicting both the healthy (0) and high-risk (1) loans with a high level of accuracy. The oversampling corrected the initial class imbalance problem and resulted in a model that performs very well for this credit risk classification task.
+
+
 ## Instructions
 The instructions for this Challenge are divided into the following subsections:
  - Split the Data into Training and Testing Sets
